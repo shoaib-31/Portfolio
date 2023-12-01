@@ -24,6 +24,7 @@ const Navbar = () => {
         to="about"
         spy={true}
         smooth={true}
+        offset={70}
         duration={500}
         onSetActive={handleSetActive}
         show={activeLink === "about"}
@@ -34,6 +35,7 @@ const Navbar = () => {
         to="skills"
         spy={true}
         smooth={true}
+        offset={70}
         duration={500}
         onSetActive={handleSetActive}
         show={activeLink === "skills"}
@@ -43,6 +45,7 @@ const Navbar = () => {
       <StyledLink
         to="projects"
         spy={true}
+        offset={70}
         smooth={true}
         duration={500}
         onSetActive={handleSetActive}
@@ -52,6 +55,7 @@ const Navbar = () => {
       </StyledLink>
       <StyledLink
         to="contact"
+        offset={70}
         spy={true}
         smooth={true}
         duration={500}
@@ -75,6 +79,7 @@ const Nav = styled.div`
   flex-direction: row-reverse;
   justify-content: center;
   padding-bottom: 10rem;
+  z-index: 5;
 `;
 const StyledLink = styled(Link)`
   font-size: 1.5rem;

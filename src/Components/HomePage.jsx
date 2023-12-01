@@ -23,7 +23,7 @@ const bounce = keyframes`
 
 const Container = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   padding-top: 10%;
   padding-left: 10%;
 `;

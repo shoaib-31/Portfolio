@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaDownload } from "react-icons/fa6";
 import Pic from "/Pic.svg";
+import { useEffect, useRef } from "react";
 const handleDownload = () => {
   const pdfUrl = "/Resume.pdf";
   const a = document.createElement("a");
@@ -12,12 +13,25 @@ const handleDownload = () => {
 };
 
 const AboutPage = () => {
+  const aboutRef = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+      });
+    });
+
+    observer.observe(aboutRef.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <Container id="about">
       <Left>
         <Image src={Pic} />
       </Left>
-      <Right>
+      <Right className="hidden" ref={aboutRef}>
         <Light>I&apos;m a</Light>
         <Dark>Full Stack Developer</Dark>
         <Buttons>
@@ -52,6 +66,16 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  display: flex;
+  transition: all 0.8s ease-in-out;
+  transform: translateX(6rem);
+  opacity: 0;
+  filter: blur(10px);
+  &.show {
+    filter: blur(0px);
+    transform: translateX(0);
+    opacity: 1;
+  }
 `;
 const Light = styled.div`
   color: #5d5d5d;
