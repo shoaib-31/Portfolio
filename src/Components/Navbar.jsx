@@ -55,7 +55,7 @@ const Navbar = () => {
       </StyledLink>
       <StyledLink
         to="contact"
-        offset={70}
+        offset={20}
         spy={true}
         smooth={true}
         duration={500}
@@ -71,7 +71,7 @@ const Navbar = () => {
 const Nav = styled.div`
   width: 100vh;
   height: 2rem;
-  right: -48vh;
+  right: -46vh;
   top: 45vh;
   position: fixed;
   transform: rotateZ(-90deg);

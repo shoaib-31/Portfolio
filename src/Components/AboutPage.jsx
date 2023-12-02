@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaDownload } from "react-icons/fa6";
 import Pic from "/Pic.svg";
 import { useEffect, useRef } from "react";
+
 const handleDownload = () => {
   const pdfUrl = "/Resume.pdf";
   const a = document.createElement("a");
@@ -10,6 +11,23 @@ const handleDownload = () => {
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
+};
+const sendEmail = () => {
+  var recipientEmail = "shoaibakmasood@gmail.com";
+
+  var emailSubject = "Regarding Job Opportunity";
+
+  var emailContent = "Hello Shoaib, we would like to offer you a job.";
+
+  var gmailLink =
+    "https://mail.google.com/mail/?view=cm&fs=1&to=" +
+    encodeURIComponent(recipientEmail) +
+    "&su=" +
+    encodeURIComponent(emailSubject) +
+    "&body=" +
+    encodeURIComponent(emailContent);
+
+  window.open(gmailLink, "_blank");
 };
 
 const AboutPage = () => {
@@ -31,7 +49,7 @@ const AboutPage = () => {
       <Left>
         <Image src={Pic} />
       </Left>
-      <Right className="hidden" ref={aboutRef}>
+      <Right ref={aboutRef}>
         <Light>I&apos;m a</Light>
         <Dark>Full Stack Developer</Dark>
         <Buttons>
@@ -39,7 +57,7 @@ const AboutPage = () => {
             <FaDownload />
             &nbsp;Download CV
           </Button>
-          <Button>Hire Me</Button>
+          <Button onClick={sendEmail}>Hire Me</Button>
         </Buttons>
       </Right>
     </Container>
@@ -51,6 +69,7 @@ const Container = styled.div`
   height: 100vh;
   border-width: 5px 0;
   display: flex;
+  overflow-x: hidden;
 `;
 const Left = styled.div`
   width: 50%;
@@ -67,8 +86,8 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   display: flex;
-  transition: all 0.8s ease-in-out;
-  transform: translateX(6rem);
+  transition: all 0.6s ease-in-out;
+  transform: translateX(50%);
   opacity: 0;
   filter: blur(10px);
   &.show {

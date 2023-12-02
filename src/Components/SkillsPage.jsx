@@ -1,18 +1,19 @@
 import styled from "styled-components";
-import css from "../Assets/webDev/css.svg";
-import html from "../Assets/webDev/html.svg";
-import javascript from "../Assets/webDev/javascript.svg";
-import mongodb from "../Assets/webDev/mongodb.svg";
-import nodejs from "../Assets/webDev/node-js.svg";
-import express from "../Assets/webDev/express.svg";
-import react from "../Assets/webDev/react.svg";
-import redux from "../Assets/webDev/redux.svg";
-import postgresql from "../Assets/webDev/postgresql.svg";
-import sequelize from "../Assets/webDev/sequelize.svg";
-import next from "../Assets/webDev/nextjs-2.svg";
-import git from "../Assets/webDev/git.svg";
-import github from "../Assets/webDev/github.svg";
-import docker from "../Assets/webDev/docker.svg";
+import css from "../Assets/skills/css.svg";
+import html from "../Assets/skills/html.svg";
+import javascript from "../Assets/skills/javascript.svg";
+import mongodb from "../Assets/skills/mongodb.svg";
+import nodejs from "../Assets/skills/node-js.svg";
+import express from "../Assets/skills/express.svg";
+import react from "../Assets/skills/react.svg";
+import redux from "../Assets/skills/redux.svg";
+import postgresql from "../Assets/skills/postgresql.svg";
+import sequelize from "../Assets/skills/sequelize.svg";
+import next from "../Assets/skills/nextjs-2.svg";
+import git from "../Assets/skills/git.svg";
+import github from "../Assets/skills/github.svg";
+import docker from "../Assets/skills/docker.svg";
+import cpp from "../Assets/skills/cpp.svg";
 import { useEffect, useRef } from "react";
 
 const SkillsPage = () => {
@@ -57,6 +58,7 @@ const SkillsPage = () => {
         <Circle></Circle>
       </Box>
       <Box ref={box3Ref} skill={"Others"}>
+        <Logo src={cpp} />
         <Logo src={git} />
         <Logo src={github} />
         <Logo src={docker} />
@@ -111,10 +113,10 @@ const Box = styled.div`
   position: relative;
   gap: 2rem;
   background-color: #101010;
-  transition: all 0.5s ease-in-out;
-  transform: translateX(8rem);
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-10rem);
   opacity: 0;
-  filter: blur(10px);
+  filter: blur(5px);
   &:nth-child(1) {
     transition-delay: 0s;
   }

@@ -1,9 +1,23 @@
+import { useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 
 const HomePage = () => {
+  const homeRef = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+      });
+    });
+
+    observer.observe(homeRef.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <Container id="home">
-      <Hello>hello.</Hello>
+      <Hello ref={homeRef}>hello.</Hello>
       <Scroll>&mdash; scroll down</Scroll>
     </Container>
   );
@@ -14,7 +28,7 @@ const bounce = keyframes`
     background-position: bottom 0 right 0;
   }
   50% {
-    background-position: bottom 0 right 50rem;
+    background-position: bottom 0 right 10rem;
   }
   100% {
     background-position: bottom 0 right 0;
@@ -22,10 +36,9 @@ const bounce = keyframes`
 `;
 
 const Container = styled.div`
-  width: 100%;
-  height: 85vh;
-  padding-top: 10%;
-  padding-left: 10%;
+  width: 100vw;
+  height: 102vh;
+  overflow-x: hidden;
 `;
 
 const Hello = styled.div`
@@ -35,6 +48,17 @@ const Hello = styled.div`
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   animation: ${bounce} 2s ease-in-out infinite;
+  margin-left: 10rem;
+  margin-top: 15rem;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(5rem);
+  opacity: 0;
+  filter: blur(10px);
+  &.show {
+    filter: blur(0px);
+    transform: translateX(0);
+    opacity: 1;
+  }
 `;
 
 const Scroll = styled.div`
