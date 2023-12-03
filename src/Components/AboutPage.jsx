@@ -66,10 +66,11 @@ const AboutPage = () => {
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   border-width: 5px 0;
   display: flex;
   overflow-x: hidden;
+  padding: 2rem 0;
 `;
 const Left = styled.div`
   width: 45%;

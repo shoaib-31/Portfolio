@@ -80,6 +80,7 @@ const Technologies = styled.div`
 const Carousel = styled.div`
   width: 80%;
   height: 80%;
+  margin-top: 6rem;
   position: relative;
 `;
 const Container = styled.div`
@@ -90,7 +91,6 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  padding-top: 5rem;
 `;
 const Main = styled.div`
   width: 60vw;

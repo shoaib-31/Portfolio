@@ -24,7 +24,7 @@ const Navbar = () => {
         to="about"
         spy={true}
         smooth={true}
-        offset={70}
+        offset={100}
         duration={500}
         onSetActive={handleSetActive}
         show={activeLink === "about"}
@@ -55,7 +55,7 @@ const Navbar = () => {
       </StyledLink>
       <StyledLink
         to="contact"
-        offset={20}
+        offset={-20}
         spy={true}
         smooth={true}
         duration={500}
