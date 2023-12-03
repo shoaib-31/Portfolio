@@ -10,13 +10,13 @@ import SkillsPage from "./Components/SkillsPage";
 function App() {
   return (
     <>
-      <MediaQuery maxDeviceWidth={1450}>
+      <MediaQuery maxDeviceWidth={1099}>
         <p style={{ color: "white" }}>
           Sorry this website in currently not visible for your device size.
           Please visit few days later.
         </p>
       </MediaQuery>
-      <MediaQuery minDeviceWidth={1450}>
+      <MediaQuery minDeviceWidth={1100}>
         <Navbar />
         <HomePage />
         <AboutPage />

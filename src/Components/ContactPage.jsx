@@ -138,6 +138,9 @@ const Container = styled.div`
   height: 100vh;
   padding: 1rem;
   display: flex;
+  @media (max-width: 1200px) {
+    gap: 4rem;
+  }
 `;
 const StyledForm = styled.form`
   display: flex;
@@ -199,6 +202,9 @@ const Right = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
+  @media (max-width: 1200px) {
+  }
 `;
 const Say = styled.div`
   color: white;

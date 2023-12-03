@@ -60,6 +60,10 @@ const Hello = styled.div`
     transform: translateX(0);
     opacity: 1;
   }
+  @media (max-width: 1300px) {
+    font-size: 21rem;
+    animation: none;
+  }
 `;
 
 const Scroll = styled.div`

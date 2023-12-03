@@ -101,11 +101,17 @@ const Light = styled.div`
   color: #5d5d5d;
   font-size: 4rem;
   font-weight: 700;
+  @media (max-width: 1300px) {
+    font-size: 3rem;
+  }
 `;
 const Dark = styled.div`
   color: white;
   font-size: 7rem;
   font-weight: 700;
+  @media (max-width: 1300px) {
+    font-size: 6rem;
+  }
 `;
 const Buttons = styled.div`
   height: auto;
