@@ -45,7 +45,7 @@ const Navbar = () => {
       <StyledLink
         to="projects"
         spy={true}
-        offset={70}
+        offset={0}
         smooth={true}
         duration={500}
         onSetActive={handleSetActive}
