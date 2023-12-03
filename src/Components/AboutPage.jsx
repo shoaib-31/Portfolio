@@ -72,7 +72,7 @@ const Container = styled.div`
   overflow-x: hidden;
 `;
 const Left = styled.div`
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: flex;
   justify-content: center;

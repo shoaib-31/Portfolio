@@ -72,7 +72,7 @@ const Nav = styled.div`
   width: 100vh;
   height: 2rem;
   right: -46vh;
-  top: 45vh;
+  top: 40vh;
   position: fixed;
   transform: rotateZ(-90deg);
   display: flex;

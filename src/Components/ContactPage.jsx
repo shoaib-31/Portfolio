@@ -148,6 +148,7 @@ const StyledForm = styled.form`
   height: fit-content;
   padding: 2rem;
   border: 2px solid white;
+  margin: 1rem;
   justify-content: center;
   transition: all 0.4s ease-in-out;
   transform: translateY(2rem);
@@ -198,7 +199,7 @@ const Right = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
 `;
 const Say = styled.div`
