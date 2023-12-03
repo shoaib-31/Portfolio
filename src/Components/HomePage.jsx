@@ -17,7 +17,7 @@ const HomePage = () => {
   }, []);
   return (
     <Container id="home">
-      <Hello ref={homeRef}>hello.</Hello>
+      <Hello ref={homeRef}>hello.&nbsp;&nbsp;</Hello>
       <Scroll>&mdash; scroll down</Scroll>
     </Container>
   );
@@ -39,6 +39,8 @@ const Container = styled.div`
   width: 100vw;
   height: 102vh;
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
 `;
 
 const Hello = styled.div`
@@ -48,8 +50,7 @@ const Hello = styled.div`
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   animation: ${bounce} 2s ease-in-out infinite;
-  margin-left: 7%;
-  margin-top: 10%;
+  margin-left: 5%;
   transition: all 0.4s ease-in-out;
   transform: translateY(5rem);
   opacity: 0;

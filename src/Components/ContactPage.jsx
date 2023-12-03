@@ -136,15 +136,15 @@ const ContactPage = () => {
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
 `;
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   background-color: #101010;
-  border-radius: 2rem;
-  width: 30rem;
+  border-radius: 1rem;
+  width: 25rem;
   height: fit-content;
   padding: 2rem;
   border: 2px solid white;
@@ -161,7 +161,6 @@ const StyledForm = styled.form`
   }
 `;
 const Btn = styled.button`
-  margin: 1rem 0;
   height: 3rem;
   font-size: 1.5rem;
   border-radius: 0.6rem;
@@ -178,7 +177,7 @@ const Btn = styled.button`
 `;
 const StyledTextArea = styled.textarea`
   border-radius: 0.5rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   padding: 0 0.5rem;
   font-size: 1.3rem;
 `;
@@ -187,10 +186,9 @@ const StyledLabel = styled.label`
   font-size: 1.5rem;
 `;
 const StyledInput = styled.input`
-  width: 80%;
+  width: 95%;
   height: 2rem;
   border-radius: 0.5rem;
-  margin: 1rem 0;
   padding: 0 0.5rem;
   font-size: 1.3rem;
 `;
@@ -204,8 +202,8 @@ const Right = styled.div`
 `;
 const Say = styled.div`
   color: white;
-  width: 70%;
-  font-size: 2rem;
+  width: 60%;
+  font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
 `;

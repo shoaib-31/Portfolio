@@ -82,7 +82,7 @@ const Nav = styled.div`
   z-index: 5;
 `;
 const StyledLink = styled(Link)`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: ${(props) => (props.show ? "#fff" : "#484848")};
   margin: 0 1.5rem;
   font-weight: 300;

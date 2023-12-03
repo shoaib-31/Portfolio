@@ -81,15 +81,14 @@ const Container = styled.div`
 `;
 const Text = styled.div`
   color: white;
-  font-size: 1.5rem;
-  border: 2px solid white;
+  background-color: #2e2e2e;
+  font-size: 1.2rem;
   border-radius: 1rem;
   padding: 5px;
-  font-family: "Source Code Pro", monospace;
 `;
 const Logo = styled.img`
-  width: 7rem;
-  height: 7rem;
+  aspect-ratio: 1;
+  width: 5rem;
 `;
 const Circle = styled.div`
   width: 100%;
@@ -98,20 +97,20 @@ const Circle = styled.div`
   background: linear-gradient(to right, #196bca, #f50166);
   position: absolute;
   right: 0;
-  border-radius: 20px;
+  border-radius: 15px;
 `;
 const Box = styled.div`
   width: 60%;
   height: fit-content;
   border: 2px solid white;
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 2rem;
+  gap: 1rem;
   background-color: #101010;
   transition: all 0.4s ease-in-out;
   transform: translateX(-10rem);

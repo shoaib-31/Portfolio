@@ -98,12 +98,12 @@ const Right = styled.div`
 `;
 const Light = styled.div`
   color: #5d5d5d;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
 `;
 const Dark = styled.div`
   color: white;
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 700;
 `;
 const Buttons = styled.div`
@@ -113,10 +113,10 @@ const Buttons = styled.div`
 const Button = styled.button`
   aspect-ratio: 4;
   width: fit-content;
-  padding: 1.5rem;
+  padding: 1rem;
   border: none;
   margin: 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   background: linear-gradient(to right, #196bca, #f50166);
   color: white;
   font-size: 1.2rem;
