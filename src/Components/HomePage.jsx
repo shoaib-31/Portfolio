@@ -48,8 +48,8 @@ const Hello = styled.div`
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   animation: ${bounce} 2s ease-in-out infinite;
-  margin-left: 10rem;
-  margin-top: 15rem;
+  margin-left: 7%;
+  margin-top: 10%;
   transition: all 0.4s ease-in-out;
   transform: translateY(5rem);
   opacity: 0;
