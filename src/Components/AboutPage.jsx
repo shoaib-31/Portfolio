@@ -118,7 +118,7 @@ const Buttons = styled.div`
   width: 100%;
 `;
 const Button = styled.button`
-  aspect-ratio: 4;
+  height: fit-content;
   width: fit-content;
   padding: 1rem;
   border: none;

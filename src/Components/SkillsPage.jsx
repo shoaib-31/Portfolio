@@ -36,6 +36,7 @@ const SkillsPage = () => {
   }, []);
   return (
     <Container id="skills">
+      <Head>What I&apos;m good at</Head>
       <Box ref={box1Ref} skill={"Web Development"}>
         <Logo src={html} />
         <Logo src={css} />
@@ -57,7 +58,7 @@ const SkillsPage = () => {
         <Text>Data Structures and Algorithms</Text>
         <Circle></Circle>
       </Box>
-      <Box ref={box3Ref} skill={"Others"}>
+      <Box ref={box3Ref} skill={"Others(Version Controls, DevOps, etc)"}>
         <Logo src={cpp} />
         <Logo src={git} />
         <Logo src={github} />
@@ -79,6 +80,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+`;
+const Head = styled.h1`
+  color: #242424;
+  font-size: 10rem;
 `;
 const Text = styled.div`
   color: white;

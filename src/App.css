@@ -10,6 +10,22 @@ body {
   display: flex;
   width: 100vw;
   flex-direction: column;
+  -webkit-scrollbar-track {
+    background: #000;
+  }
+  -webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 6px;
+    border: 3px solid #000;
+  }
+
+  -webkit-scrollbar-corner {
+    background: #000;
+  }
+
+  -webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
 }
 * {
   margin: 0;
@@ -46,4 +62,7 @@ body {
 }
 .slick-dots li.slick-active button:before {
   color: white;
+}
+body::-webkit-scrollbar {
+  width: 12px;
 }

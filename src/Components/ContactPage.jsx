@@ -202,8 +202,9 @@ const Right = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   @media (max-width: 1200px) {
+    align-items: flex-start;
   }
 `;
 const Say = styled.div`
