@@ -1,5 +1,6 @@
 import Ecommerce from "./e-commerce.jpg";
 import Portfolio from "./Portfolio.jpg";
+import Quizzr from "./Quizzr.jpg";
 
 const projects = [
   {
@@ -19,6 +20,23 @@ const projects = [
       "The website you are currently viewing is my portfolio website. I've used React to build this website. I've used React Hooks to manage the state of the website. I've used React Icons to add icons to the website. I've used React Scroll to add smooth scrolling to the website.I've used Github to deploy the website.",
     github: "https://github.com/shoaib-31/Portfolio.git",
     technologies: ["React", "HTML", "CSS", "Javascript"],
+  },
+  {
+    index: 2,
+    title: "Quizzr",
+    image: Quizzr,
+    description:
+      "Crafted with passion and precision, my quizzing platform seamlessly blends MongoDB, React, Node, Express, Redux, HTML, CSS, and JavaScript. Immerse yourself in a dynamic experience where users can effortlessly create and take quizzes, showcasing the intersection of innovation and user-friendly design.",
+    github: "https://github.com/shoaib-31/Quizzr.git",
+    technologies: [
+      "MongoDb",
+      "Express",
+      "Node.js",
+      "React",
+      "HTML",
+      "CSS",
+      "Javascript",
+    ],
   },
 ];
 
