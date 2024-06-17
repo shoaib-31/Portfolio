@@ -4,7 +4,8 @@ import Pic from "/Pic.svg";
 import { useEffect, useRef } from "react";
 
 const handleDownload = () => {
-  const pdfUrl = "/Resume.pdf";
+  const pdfUrl =
+    "https://drive.usercontent.google.com/u/0/uc?id=1719K-AK2jq2rTOvj3BWRgwUhAUJIcwMF&export=download";
   const a = document.createElement("a");
   a.href = pdfUrl;
   a.download = "Resume.pdf";
